@@ -1,0 +1,82 @@
+{
+  "best_model": "RandomForest",
+  "class_labels": [
+    "Good",
+    "Poor",
+    "Standard"
+  ],
+  "numeric_features": [
+    "Age",
+    "Annual_Income",
+    "Monthly_Inhand_Salary",
+    "Num_Bank_Accounts",
+    "Num_Credit_Card",
+    "Interest_Rate",
+    "Num_of_Loan",
+    "Delay_from_due_date",
+    "Num_of_Delayed_Payment",
+    "Changed_Credit_Limit",
+    "Num_Credit_Inquiries",
+    "Outstanding_Debt",
+    "Credit_Utilization_Ratio",
+    "Credit_History_Age",
+    "Total_EMI_per_month",
+    "Amount_invested_monthly",
+    "Monthly_Balance",
+    "Num_Loan_Types"
+  ],
+  "categorical_features": [
+    "Occupation",
+    "Credit_Mix",
+    "Payment_of_Min_Amount",
+    "Payment_Behaviour",
+    "Month"
+  ],
+  "metrics": {
+    "LogisticRegression": {
+      "accuracy": 0.6392280425364316,
+      "precision_macro": 0.617953663666583,
+      "recall_macro": 0.6667554379757604,
+      "f1_macro": 0.6257857997941462,
+      "f1_weighted": 0.6457853067322181
+    },
+    "DecisionTree": {
+      "accuracy": 0.6583300512012603,
+      "precision_macro": 0.6303573730890016,
+      "recall_macro": 0.6722304889531365,
+      "f1_macro": 0.6415920470973341,
+      "f1_weighted": 0.6635648059448218
+    },
+    "RandomForest": {
+      "accuracy": 0.6715242221346986,
+      "precision_macro": 0.6516877422170885,
+      "recall_macro": 0.7073727319002338,
+      "f1_macro": 0.6600344814769671,
+      "f1_weighted": 0.6759693496461263
+    },
+    "GradientBoosting": {
+      "accuracy": 0.688460023631351,
+      "precision_macro": 0.6603103507296186,
+      "recall_macro": 0.6508241848137987,
+      "f1_macro": 0.6549391543112191,
+      "f1_weighted": 0.6877237258721028
+    }
+  },
+  "best_confusion_matrix": [
+    [
+      647,
+      38,
+      165
+    ],
+    [
+      174,
+      1163,
+      166
+    ],
+    [
+      533,
+      592,
+      1600
+    ]
+  ]
+}
